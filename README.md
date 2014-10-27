@@ -1,7 +1,5 @@
-== If you get simaya source code from simaya repository, do this just after cloning:
 
-git submodule init
-git submodule update
+[![Build Status](https://travis-ci.org/simaya/simaya.svg)](https://travis-ci.org/simaya/simaya)
 
 == Documentation about How To Install located on folder docs/
 
