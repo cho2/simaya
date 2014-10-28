@@ -467,7 +467,7 @@ module.exports = function(app) {
     }
 
     var validateManualIncoming = function(data) {
-      _.each(["receivedDate", "date", "incomingAgenda", "mailId", "recipient", "title", "classification", "priority", "type", "comments"], function(item) {
+      _.each(["receivedDate", "date", "incomingAgenda", "mailId", "recipient", "title", "classification", "priority", "type" ], function(item) {
         if (!data[item]) {
           success = false;
           fields.push(item);
@@ -1439,6 +1439,8 @@ module.exports = function(app) {
     }
 
     var isIncomingAgenda = function(org, recipients) {
+
+          console.log(org);
       return (l.data.receivingOrganizations &&
           l.data.receivingOrganizations[org]);
     }
@@ -1629,9 +1631,9 @@ module.exports = function(app) {
       getDispositions(function() {
         findOrg(function(err, org) {
           if (isRecipient(result[0].recipients)) recipientView(false);
+          else if (isIncomingAgenda(org)) recipientView(true);
           else if (isRecipient(result[0].ccList)) ccView(false);
           else if (isSender(result[0])) senderView();
-          else if (isIncomingAgenda(org)) recipientView(true);
 
           if (l.meta.underReview) outgoingView();
 
@@ -1690,6 +1692,13 @@ module.exports = function(app) {
     var limit = options.limit || 20;
     var page = options.page || 1;
     var skip = (page - 1) * limit;
+    var exposeAgenda = function(data) {
+      _.each(data, function(item) {
+        var org = item.receivingOrganizations[options.myOrganization] || {};
+        item.incomingAgenda = org.agenda;
+      });
+    }
+
     db.find(selector, options, function(err, cursor) {
       if (err) return cb(err);
       cursor.count(false, function(err, count) {
@@ -1704,6 +1713,9 @@ module.exports = function(app) {
             type: type,
             total: count,
             data: result
+          }
+          if (type == "letter-incoming") {
+            exposeAgenda(result);
           }
           cb(null, obj);
         });

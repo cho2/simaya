@@ -1436,6 +1436,7 @@ Letter = module.exports = function(app) {
 
   var listLetter = function(vals, req, res) {
     var me = req.session.currentUser;
+    var myOrganization = req.session.currentUserProfile.organization;
     var options = {};
 
     var functions = {
@@ -1448,6 +1449,7 @@ Letter = module.exports = function(app) {
     if (f) {
       if (vals.action == "agenda-incoming") {
         options.agenda = true;
+        options.myOrganization = myOrganization;
       }
       options.page = parseInt(req.query.page) || 1;
       var sortOptions = req.query.sort || {};
