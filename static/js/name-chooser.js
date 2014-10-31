@@ -195,7 +195,7 @@ NameChooser.prototype.initWidget = function(e) {
 NameChooser.prototype.startAddManual = function() {
   var self = this;
 
-  self.$orgChooser.addClass("hidden");
+  if (self.$orgChooser) self.$orgChooser.addClass("hidden");
   self.$tree.addClass("hidden");
   self.$addDb.addClass("hidden");
   self.$addManual.addClass("hidden");
@@ -219,6 +219,14 @@ NameChooser.prototype.getValue = function() {
   return data;
 }
 
+NameChooser.prototype.emitChange = function() {
+  var self = this;
+  if (self.$control.change) {
+    self.$control.change();
+  }
+
+}
+
 NameChooser.prototype.setValue = function(val) {
   var self = this;
 
@@ -229,6 +237,7 @@ NameChooser.prototype.setValue = function(val) {
       data.push(nodes[i].username);
     }
     self.$control.val(data.join(","));
+    self.emitChange();
     return;
   }
 
@@ -258,6 +267,8 @@ NameChooser.prototype.setValue = function(val) {
   } else {
     self.$control.val("");
   }
+  
+  self.emitChange();
 }
 
 NameChooser.prototype.val = function(a) {
@@ -362,6 +373,7 @@ NameChooser.prototype.renderPlaceholder = function() {
 
     clear.click(function() {
       self.removeName($(this).attr("data-value"));
+      self.emitChange();
       self.renderPlaceholder();
     });
 
@@ -405,9 +417,7 @@ NameChooser.prototype.setupButtons = function() {
       self.manualMode = false;
 
     } else {
-      self.$orgChooser.addClass("hidden");
-      self.$tree.addClass("hidden");
-      self.hide();
+      if (self.$orgChooser) self.$orgChooser.addClass("hidden");
     }
   });
 }
