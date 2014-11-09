@@ -185,6 +185,14 @@
                 </select>
             </div>
         </div>
+
+        <div class="control-group">
+            <label class="control-label">Kaitkan Surat</label>
+
+            <div class="controls">				
+				<a class="btn btn-mini btn-info" role="button" data-toggle="modal" data-target="#kaitkan"><i class="icon-link"></i>&nbsp; Kaitkan Surat</a>
+            </div>
+        </div>
         <hr/>
     </div>
     <div class="step-pane" id="step3">
@@ -486,6 +494,80 @@ $(document).ready(function() {
 	<p>2. Surat Edaran Menteri Pendayagunaan Aparatur Negara nomor SE/01/M.PAN/3/2009 tentang Pemanfaatan Perangkat Lunak Legal dan <em>Open Source Software (OSS)</em></p>
 	<p>3. Peraturan Menteri Komunikasi dan Informatika nomor 7 tahun 2013 tentang Pedoman Penerapan Interoperabilitas Dokumen Perkantoran Bagi Penyelenggara Sistem Elektronik untuk Pelayanan Publik</p>
 	<p>Untuk penggunaan dikomputer lokal, dapat menggunakan <a href="http://www.libreoffice.org/download/">LibreOffice</a></p>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn" data-dismiss="modal">Tutup</a>
+  </div>
+</div>
+
+<div class="modal hide fade audit-detail" id="kaitkan" role="dialog">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">×</a>
+    <h3>Kaitkan Surat</h3>
+  </div>
+  <div class="modal-body">
+	<div class="col-sm-6">
+		<div class="tabbable">
+			<ul class="nav nav-tabs" id="myTab">
+				<li class="active">
+					<a data-toggle="tab" href="#agendamasuk">
+					Agenda Masuk
+					</a>
+				</li>
+				<li class="">
+					<a data-toggle="tab" href="#agendakeluar">
+					Agenda Keluar
+					</a>
+				</li>
+			</ul>
+			<div class="tab-content">
+				<div id="agendamasuk" class="tab-pane fade active in">
+					<table class="table table-bordered table-striped">
+					  <thead>
+						  <tr>
+							<th><input name="form-field-checkbox" type="checkbox" /></th>
+							<th>Tanggal</th>
+							<th>Nomor Surat</th>
+							<th>Atas Nama</th>
+							<th>Perihal</th>
+						  </tr>
+					  </thead>
+					  <tbody>
+						  <tr>
+							<td><input name="form-field-checkbox" type="checkbox" /></td>  
+							<td>10/11/2014</td>
+							<td>123/SMY/XI/2014</td>
+							<td>Waljinah</td>
+							<td>Tes siMAYA</td>
+						  </tr>
+					  </tbody>
+					</table>
+				</div>
+				<div id="agendakeluar" class="tab-pane fade">
+					<table class="table table-bordered table-striped">
+					  <thead>
+						  <tr>
+							<th><input name="form-field-checkbox" type="checkbox" /></th>
+							<th>Tanggal</th>
+							<th>Nomor Surat</th>
+							<th>Atas Nama</th>
+							<th>Perihal</th>
+						  </tr>
+					  </thead>
+					  <tbody>
+						  <tr>
+							<td><input name="form-field-checkbox" type="checkbox" /></td>  
+							<td>10/11/2014</td>
+							<td>123/SMY/XI/2014</td>
+							<td>Cahyono</td>
+							<td>Tes siMAYA</td>
+						  </tr>
+					  </tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
   </div>
   <div class="modal-footer">
     <a href="#" class="btn" data-dismiss="modal">Tutup</a>
