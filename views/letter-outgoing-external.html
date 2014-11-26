@@ -94,6 +94,7 @@
         <div class="controls">
             <input class="span4" type="text" name="mailId" value="{{letter.mailId}}" {{^isAdministration}}disabled{{/isAdministration}} >
             <em>* diisi oleh Tata Usaha</em>
+			<span class="alert alert-danger small">Maaf, nomor surat yang Anda masukkan sudah ada</span>
         </div>
     </div>
 
@@ -102,6 +103,7 @@
 
         <div class="controls">
             <input class="span4" type="text" name="outgoingAgenda" value="{{letter.outgoingAgenda}}"  {{^isAdministration}}disabled{{/isAdministration}}>
+				<span class="alert alert-danger small">Maaf, nomor agenda yang Anda masukkan sudah ada</span>
         </div>
     </div>
 
