@@ -88,6 +88,16 @@
   </div>
 </div>
 
+<!--belumLunas-->
+<div class="modal hide fade" role="dialog" id="belumLunas">
+  <div class="modal-body">
+    <img src="/img/belum-lunas.png">
+  </div>
+  <div class="modal-footer">
+	<button class="btn btn-danger" data-dismiss="modal">Lanjutkan</button>
+  </div>
+</div>
+
 </script>
 
 <script type="text/javascript">
@@ -128,5 +138,11 @@ $(function() {
   valid();
 
 });
+
+//belumLunas
+$(document).ready(function () {
+	$('#belumLunas').modal('show');
+});
+
 </script>
 
