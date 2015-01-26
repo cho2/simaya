@@ -7,7 +7,7 @@ body {
   display: block;
   margin: 0px;
   background-color: #F2F2F2;
-  font-family: 'OpenSans-Regular' !important;
+  font-family: 'Roboto-Regular' !important;
 }
 
 ::selection {
@@ -28,11 +28,11 @@ p {
 }
 
 textarea.form-control {
-  font-family: 'OpenSans-Regular' !important;
+  font-family: 'Roboto-Regular' !important;
   font-size: 1.8rem;
 }
 
-.searchbar::-webkit-input-placeholder { color:#ccc; font-family: 'OpenSans-Light'; }
+.searchbar::-webkit-input-placeholder { color:#ccc; font-family: 'Roboto-Light'; }
 
 .header-pict {
   display: block; 
@@ -62,7 +62,7 @@ textarea.form-control {
 }
 
 .header-username {
-  font-family: 'OpenSans-Bold';
+  font-family: 'Roboto-Bold';
   font-size: 3.5rem;
   color: #fff;
   text-shadow: 1px 1px 3px #333;
@@ -70,7 +70,7 @@ textarea.form-control {
 }
 
 .header-subinfo {
-  font-family: 'OpenSans-Light';
+  font-family: 'Roboto-Light';
   font-size: 1.8rem;
   color: #fff;
   line-height: 2.6rem;
@@ -115,7 +115,7 @@ textarea.form-control {
 .btn-status, .btn-status i {
   color: #888;
   font-size: 1.8rem;
-  font-family: 'OpenSans-Light';
+  font-family: 'Roboto-Light';
   background: transparent;
   border: none;
   padding-right: 15px;
@@ -135,18 +135,18 @@ textarea.form-control {
 
 .update-status{
   color: #555;
-  font-family: 'OpenSans-Regular';
+  font-family: 'Roboto-Regular';
   margin-left: 10px;
   margin-right: 10px;
   max-width: 740px;
 }
 
-.update-status::-webkit-input-placeholder { color:#ddd; font-family: 'OpenSans-Light'; }
+.update-status::-webkit-input-placeholder { color:#ddd; font-family: 'Roboto-Light'; }
 
 .soc-map-tag, .soc-map-tag a {
   padding-top: 20px;
   color: #428BCA;
-  font-family: 'OpenSans-Light';
+  font-family: 'Roboto-Light';
   font-size: 1.4rem;
   padding-left: 10px;
 }
@@ -157,7 +157,7 @@ textarea.form-control {
 
 button.update-btn {
   margin-top: 10px;
-  font-family: 'OpenSans-Light' !important;
+  font-family: 'Roboto-Light' !important;
   font-size: 1.8rem;
   color: #fff;
   margin-right: 10px;
@@ -178,7 +178,7 @@ button.update-btn {
 }
 
 .sidebar-title {
-  font-family: 'OpenSans-ExtraBold';
+  font-family: 'Roboto-ExtraBold';
   font-size: 1.8rem;
 }
 
@@ -188,13 +188,13 @@ button.update-btn {
 }
 
 .sidebar-content .judul {
-  font-family: 'OpenSans-Bold';
+  font-family: 'Roboto-Bold';
   font-size: 1.6rem;
   padding-top: 10px;
 }
 
 .sidebar-content .isi {
-  font-family: 'OpenSans-Light';
+  font-family: 'Roboto-Light';
   font-size: 1.4rem;
 }
 
@@ -221,7 +221,7 @@ button.update-btn {
 
 .content {
   margin-bottom: 50px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   color: #333;
 }
@@ -253,14 +253,14 @@ button.update-btn {
 }
 
 .status-username {
-  font-family: 'OpenSans-Bold';
+  font-family: 'Roboto-Bold';
   color: #000;
 }
 
 .status-date {
   padding-top: 5px;
   line-height: 1.8rem;
-  font-family: 'OpenSans-Light';
+  font-family: 'Roboto-Light';
   font-size: 1.2rem;
   color: #888;
 }
@@ -268,7 +268,7 @@ button.update-btn {
 .status-content {
   padding-top: 5px;
   line-height: 2.2rem;
-  font-family: 'OpenSans-Regular';
+  font-family: 'Roboto-Regular';
   font-size: 1.6rem;
   color: #444;
   padding-top: 10px;
@@ -289,13 +289,13 @@ button.update-btn {
 .status-links {
   display: block;
   color: #2283C5;
-  font-family: 'OpenSans-Regular';
+  font-family: 'Roboto-Regular';
   font-size: 1.4rem;
 }
 
 .btn-links, .btn-links a, .btn-links i {
   color: #2283C5;
-  font-family: 'OpenSans-Light';
+  font-family: 'Roboto-Light';
   background: transparent;
   border: none;
   padding-right: 10px;
@@ -320,7 +320,7 @@ button.update-btn {
 }
 
 .status-comment textarea {
-  font-family: 'OpenSans-Light';
+  font-family: 'Roboto-Light';
   font-size: 1.2rem;
   width: 90%;
 }
@@ -362,13 +362,13 @@ button.update-btn {
 
 .feed-update-status{
   color: #555;
-  font-family: 'OpenSans-Regular';
+  font-family: 'Roboto-Regular';
   margin-left: 10px;
   margin-right: 10px;
   width: 96%;
 }
 
-.feed-update-status::-webkit-input-placeholder { color:#ddd; font-family: 'OpenSans-Light'; }
+.feed-update-status::-webkit-input-placeholder { color:#ddd; font-family: 'Roboto-Light'; }
 
 .feed-update-form {
   height: auto;
@@ -404,7 +404,7 @@ button.update-btn {
   margin-top: 5px;
   margin-left: 0px;
   background-color: transparent;
-  font-family: 'OpenSans-Bold';
+  font-family: 'Roboto-Bold';
   font-size: 1.4rem;
   color: #2283C5;
 }
@@ -418,11 +418,11 @@ button.update-btn {
   text-align: right !important;
   margin-right: 10px;
   width: 75%;
-  font-family: 'OpenSans-Bold';
+  font-family: 'Roboto-Bold';
 }
 
 .feed-userlink span {
-  font-family: 'OpenSans-Light';
+  font-family: 'Roboto-Light';
 }
 
 .feed-userava {

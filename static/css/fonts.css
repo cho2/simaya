@@ -1,7 +1,7 @@
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(/fonts/opensans.ttf) format('truetype');
+  src: local('Roboto'), local('Roboto'), url(/fonts/Roboto-Regular.ttf) format('truetype');
 }
 

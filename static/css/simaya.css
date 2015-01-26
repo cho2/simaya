@@ -761,7 +761,7 @@ li.jqtree-selected .name-chooser-selected-name:before{
 
 @media print {
   * {
-    font-family: "Open Sans";
+    font-family: "Roboto";
     font-size: 1em;
   }
   .print {
