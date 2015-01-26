@@ -7,7 +7,7 @@ var package = require("./package.json");
 
 var sinergisVar = {
   version: package.version,
-  appName: 'siMAYA',
+  appName: 'siKaya',
   isLocal: settings.simaya.installation == 'local'
 }
 
@@ -65,7 +65,7 @@ app.configure('development', function(){
   }));
 
   app.use(express.errorHandler());
-  sinergisVar.version += '-beta';
+  sinergisVar.version += '';
 
 });
 
