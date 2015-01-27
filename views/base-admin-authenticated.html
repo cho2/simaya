@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="/css/ace-responsive.min.css"/>
   <link rel="stylesheet" href="/css/ace-skins.min.css"/>
   <link rel="stylesheet" href="/css/simaya.css"/>
+  <link rel="stylesheet" href="/css/sikaya.css"/>
 
   <!--[if lte IE 8]>
   <link rel="stylesheet" href="/css/ace-ie.min.css"/>
@@ -50,14 +51,17 @@
 
 <body class="navbar-fixed breadcrumbs-fixed">
 <div class="navbar navbar-default navbar-fixed-top">
-  <div class="navbar-inner">
+  <div class="navbar-inner"
+  style="box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 6px rgba(0, 0, 0, 0.12); transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);">
     <div class="container-fluid">
-      <a href="/" class="brand">
-        <small>
-          <img src="/images/logo-sikaya.png">
-          {{sys.appName}} v.{{sys.version}}{{#sys.isLocal}}<span>-λ</span>{{/sys.isLocal}} Konsol Admin
-        </small>
-      </a><!--/.brand-->
+					<a href="/" class="brand" style="padding-top: 0px; padding-left: 0px; padding-bottom: 0px;">
+						<img src="/images/sikaya-brand.png">
+						<small>
+							<!--
+							{{sys.appName}} -->
+							v.{{sys.version}}
+						</small>
+					</a><!--/.brand-->
 
       <ul class="nav ace-nav pull-right">
         <li class="light-blue user-profile">

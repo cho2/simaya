@@ -3145,7 +3145,7 @@ button.close {
   border: 0;
   -webkit-appearance: none;
 }
-
+/*
 .btn {
   display: inline-block;
   *display: inline;
@@ -3774,7 +3774,7 @@ input[type="submit"].btn.btn-mini {
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
-
+/*
   *zoom: 1;
 }
 
@@ -3815,7 +3815,7 @@ input[type="submit"].btn.btn-mini {
      -moz-border-radius: 0 0 6px 6px;
           border-radius: 0 0 6px 6px;
 }
-
+*/
 .alert {
   padding: 8px 35px 8px 14px;
   margin-bottom: 20px;
