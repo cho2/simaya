@@ -736,6 +736,22 @@ tbody.collapse.in {
   pointer-events: none;
 }
 
+/* Pagination */
+
+.pagination ul>li.active>a, .pagination ul>li.active>a:hover {
+	background-color: #FF9800;
+	border-color: #FF9800;
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+}
+
+.pagination ul>li>a, .pager>li>a {
+	color: #F57C00;
+	background-color: #fafafa;
+	margin: 0 -1px 0 0;
+	border-color: #e0e8eb;
+}
+
 /* */
 
 .breadcrumb>li>a {
