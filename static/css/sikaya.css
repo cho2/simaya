@@ -3616,3 +3616,21 @@
 .btn-flat:not(.btn-link).active {
   background-color: rgba(255, 255, 255, 0.5);
 }
+
+/* */
+
+.breadcrumb>li>a {
+	display: inline-block;
+	padding: 0 4px;
+	color: #F57C00;
+}
+
+.nav-list>li.open>a {
+	background-color: #fafafa;
+	color: #F57C00;
+}
+
+.nav-list>li.open>a>.arrow {
+	color: #F57C00;
+}
+
